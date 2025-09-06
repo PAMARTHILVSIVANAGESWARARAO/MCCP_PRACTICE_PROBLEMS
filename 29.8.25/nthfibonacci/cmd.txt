@@ -1,0 +1,18 @@
+
+curl ascii.live/parrot
+curl ascii.live/nyan
+curl ascii.live/dragon
+curl ascii.live/cat
+curl ascii.live/batman
+curl ascii.live/rocket
+curl ascii.live/space
+
+curl ascii.live/monkey
+curl ascii.live/dog
+curl ascii.live/unicorn
+curl ascii.live/penguin
+curl ascii.live/ghost
+curl ascii.live/alien
+curl ascii.live/shark
+curl ascii.live/owl
+curl ascii.live/koala
