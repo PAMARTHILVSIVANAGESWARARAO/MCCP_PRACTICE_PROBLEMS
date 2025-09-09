@@ -1,0 +1,9 @@
+import java.util.Arrays;
+
+class Solution {
+    public boolean isSorted(int[] arr) {
+        int[] res = Arrays.copyOf(arr, arr.length);
+        Arrays.sort(res);
+        return Arrays.equals(arr, res);
+    }
+}
