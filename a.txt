@@ -1,9 +1,28 @@
-import java.util.Arrays;
+public class ExtraElementIndex {
+    public static int findExtra(int[] arr1, int[] arr2) {
+        int left = 0, right = arr2.length;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (arr1[mid] == arr2[mid]) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
+        return left;
+    }
 
-class Solution {
-    public boolean isSorted(int[] arr) {
-        int[] res = Arrays.copyOf(arr, arr.length);
-        Arrays.sort(res);
-        return Arrays.equals(arr, res);
+    public static void main(String[] args) {
+        int[] a1 = {2, 4, 6, 8, 9, 10, 12};
+        int[] b1 = {2, 4, 6, 8, 10, 12};
+        System.out.println(findExtra(a1, b1)); // Output: 4
+
+        int[] a2 = {3, 5, 7, 8, 11, 13};
+        int[] b2 = {3, 5, 7, 11, 13};
+        System.out.println(findExtra(a2, b2)); // Output: 3
+
+        int[] a3 = {3, 5};
+        int[] b3 = {3};
+        System.out.println(findExtra(a3, b3)); // Output: 1
     }
 }
