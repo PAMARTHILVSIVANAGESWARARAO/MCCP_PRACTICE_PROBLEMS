@@ -1,0 +1,52 @@
+1. Brute Force
+
+Check every possible pair with two nested loops.
+
+Time Complexity: O(n²)
+
+Works but very slow for large arrays.
+
+2. Sorting + Two Pointers
+
+Sort the array → O(n log n)
+
+Use two pointers (start and end) to check sums → O(n)
+
+Total Time Complexity: O(n log n)
+
+Efficient, but sorting changes the original order of elements.
+
+3. Sorting + Binary Search
+
+Sort the array → O(n log n)
+
+For each element, binary search for its complement → O(log n)
+
+Total Time Complexity: O(n log n)
+
+Faster than brute force, but still requires sorting.
+
+4. Hashing (Preferred)
+
+Use a HashSet to store visited elements.
+
+For each element x, check if target - x already exists in the set.
+
+If yes → pair found in O(1) average lookup time.
+
+Time Complexity: O(n)
+
+Space Complexity: O(n) for storing the set.
+
+✅ Why Hashing is preferable:
+
+It is the fastest approach among all, since it avoids sorting and nested loops.
+
+Each lookup and insertion in a HashSet is O(1) on average.
+
+The whole array is traversed only once, making it truly linear time.
+
+Particularly suitable for very large arrays where O(n log n) sorting cost becomes significant.
+
+👉 Conclusion:
+Hashing is preferred because it provides the best time complexity O(n) while maintaining simplicity, making it ideal for real-time applications where speed matters.
