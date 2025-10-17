@@ -1,0 +1,28 @@
+# TODO List for Two Sum and Array Problems Implementation
+
+- [x] Create TwoSumUnsortedVerifyBrute.java
+- [x] Create TwoSumUnsortedVerifySortTwoPtr.java
+- [x] Create TwoSumUnsortedVerifyHash.java
+- [x] Create TwoSumUnsortedPairBrute.java
+- [x] Create TwoSumUnsortedPairSortTwoPtr.java
+- [x] Create TwoSumUnsortedPairHash.java
+- [x] Create TwoSumUnsortedIndicesBrute.java
+- [x] Create TwoSumUnsortedIndicesSortTwoPtr.java
+- [x] Create TwoSumUnsortedIndicesHash.java
+- [x] Create TwoSumSortedVerifyBrute.java
+- [x] Create TwoSumSortedVerifySortTwoPtr.java
+- [x] Create TwoSumSortedVerifyHash.java
+- [x] Create TwoSumSortedPairBrute.java
+- [x] Create TwoSumSortedPairSortTwoPtr.java
+- [x] Create TwoSumSortedPairHash.java
+- [ ] Create TwoSumSortedIndicesBrute.java
+- [ ] Create TwoSumSortedIndicesSortTwoPtr.java
+- [ ] Create TwoSumSortedIndicesHash.java
+- [ ] Create MergeSortedArraysMergeSort.java
+- [ ] Create MergeSortedArraysTwoPtr.java
+- [ ] Create MergeSortedArraysIntoSingleAndCopyMergeSort.java
+- [ ] Create MergeSortedArraysIntoSingleAndCopyTwoPtr.java
+- [ ] Create SortSquaresBrute.java
+- [ ] Create SortSquaresTwoPtr.java
+- [ ] Create ReverseOnlyLettersTwoPtr.java
+- [ ] Create MoveZerosTwoPtr.java
