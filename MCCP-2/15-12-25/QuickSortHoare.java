@@ -1,23 +1,21 @@
-class QuickSortLomuto {
+class QuickSortHoare {
     static void quickSort(int[] a, int l, int h) {
         if (l < h) {
             int p = partition(a, l, h);
-            quickSort(a, l, p - 1);
+            quickSort(a, l, p);
             quickSort(a, p + 1, h);
         }
     }
 
     static int partition(int[] a, int l, int h) {
-        int pivot = a[h];
-        int i = l - 1;
-        for (int j = l; j < h; j++) {
-            if (a[j] <= pivot) {
-                i++;
-                int t = a[i]; a[i] = a[j]; a[j] = t;
-            }
+        int pivot = a[l];
+        int i = l - 1, j = h + 1;
+        while (true) {
+            do { i++; } while (a[i] < pivot);
+            do { j--; } while (a[j] > pivot);
+            if (i >= j) return j;
+            int t = a[i]; a[i] = a[j]; a[j] = t;
         }
-        int t = a[i + 1]; a[i + 1] = a[h]; a[h] = t;
-        return i + 1;
     }
 
     public static void main(String[] args) {
